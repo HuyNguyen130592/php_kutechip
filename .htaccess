@@ -1,0 +1,29 @@
+
+RewriteEngine on
+
+
+RewriteRule ^san-pham/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ product_detail.php?id=$1 [L]
+RewriteRule ^chung-loai/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ product_cat.php?id=$1 [L]
+RewriteRule ^chung-loai/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html/([0-9]+)$ product_cat.php?id=$1&begin=$3 [L]
+RewriteRule ^nhom-san-pham/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ product_main.php?id=$1 [L]
+RewriteRule ^nhom-san-pham/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html/([0-9]+)$ product_main.php?id=$1&begin=$3 [L]
+RewriteRule ^home.html$ index.php [L]
+RewriteRule ^gio-hang.html$ cart.php [L]
+RewriteRule ^registerShopCart.html$ demo-registerShopCart.php [L]
+RewriteRule ^Thong-tin-thanh-toan.html$ demo-registerShopCart.php [L]
+RewriteRule ^Thanh-toan-thanh-cong.html$ success.php [L]
+RewriteRule ^blog.html$ blog.php [L]
+RewriteRule ^blog.html/([0-9]+)$ blog.php?begin=$1 [L]
+RewriteRule ^chuyen-muc/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ blog_cat.php?id=$1 [L]
+RewriteRule ^chuyen-muc/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html/([0-9]+)$ blog_cat.php?id=$1&begin=$3 [L]
+RewriteRule ^bai-viet/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ blog_detail.php?id=$1 [L]
+
+RewriteRule ^404.html$ 404.php [L]
+RewriteRule ^login.html$ admin/login.php [L]
+
+
+
+
+
+
+
